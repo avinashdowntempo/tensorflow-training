@@ -4,11 +4,16 @@
   "description": "machine learning",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "tsc index.ts --skipLibCheck && node index.js",
+    "watch": "nodemon -e ts -x \"npm run run\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@tensorflow/tfjs": "^0.13.2"
+    "@tensorflow/tfjs": "^0.13.2",
+    "nodemon": "^1.18.4",
+    "npm-watch": "^0.4.0",
+    "watch": "^1.0.2"
   }
 }
